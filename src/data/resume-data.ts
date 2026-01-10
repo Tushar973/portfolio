@@ -17,12 +17,12 @@ export const RESUME_DATA = {
     social: [
       {
         name: "GitHub",
-        url: "https://github.com/tushar",
+        url: "https://github.com/tushar973",
         icon: "github",
       },
       {
         name: "LinkedIn",
-        url: "https://linkedin.com/in/tushar",
+        url: "https://www.linkedin.com/in/tushar-kumar-gautam-696873277/",
         icon: "linkedin",
       },
     ],
@@ -75,7 +75,7 @@ export const RESUME_DATA = {
         "Engineered a secure web app with session-based authentication. Developed a real-time NLP inference pipeline integrating spaCy and TextBlob for instant text analysis.",
       link: {
         label: "GitHub",
-        href: "https://github.com/tushar",
+        href: "https://github.com/Tushar973/NLP-WEBAPP",
       },
     },
     {
@@ -85,7 +85,7 @@ export const RESUME_DATA = {
         "Built an NLP system comparing 800+ resumes against 200+ job descriptions using TF-IDF and Cosine Similarity. Used spaCy NER for skill extraction.",
       link: {
         label: "GitHub",
-        href: "https://github.com/tushar",
+        href: "https://github.com/Tushar973/AI-RESUME-ANALYZER",
       },
     },
     {
@@ -95,7 +95,7 @@ export const RESUME_DATA = {
         "Developed an end-to-end credit default prediction model. Handled class imbalance using SMOTE and optimized the model using the F2-score (Random Forest).",
       link: {
         label: "GitHub",
-        href: "https://github.com/tushar",
+        href: "https://github.com/Tushar973/Credit-Card-Default-Prediction",
       },
     },
   ],
