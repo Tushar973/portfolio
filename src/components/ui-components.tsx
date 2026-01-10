@@ -1,35 +1,76 @@
-// src/components/ui-components.tsx
 "use client";
 
-import * as React from "react";
 import { motion } from "framer-motion";
+import { ReactNode } from "react";
+import clsx from "clsx";
+import { twMerge } from "tailwind-merge";
 
-// --- Badge Component ---
-export function Badge({ children, className }: { children: React.ReactNode; className?: string }) {
+/* -------------------------------------------------
+   Utility: className merger
+-------------------------------------------------- */
+function cn(...inputs: any[]) {
+  return twMerge(clsx(inputs));
+}
+
+/* -------------------------------------------------
+   Badge Component
+-------------------------------------------------- */
+export function Badge({
+  children,
+  className,
+}: {
+  children: ReactNode;
+  className?: string;
+}) {
   return (
     <span
-      className={`inline-flex items-center rounded-md border border-neutral-800 bg-neutral-900/50 px-2 py-1 text-xs font-medium text-neutral-300 ring-1 ring-inset ring-neutral-700/20 ${className}`}
+      className={cn(
+        "rounded-full border border-neutral-800 bg-neutral-900/60 px-3 py-1 text-xs text-neutral-300",
+        className
+      )}
     >
       {children}
     </span>
   );
 }
 
-// --- Card Component ---
-export function Card({ children, className }: { children: React.ReactNode; className?: string }) {
+/* -------------------------------------------------
+   Card Component
+-------------------------------------------------- */
+export function Card({
+  children,
+  className,
+}: {
+  children: ReactNode;
+  className?: string;
+}) {
   return (
-    <div className={`rounded-xl border border-neutral-800 bg-neutral-950/50 p-6 ${className}`}>
+    <div
+      className={cn(
+        "rounded-xl border border-neutral-800 bg-neutral-900/50 p-6",
+        className
+      )}
+    >
       {children}
     </div>
   );
 }
 
-// --- Section Animation Wrapper ---
-export function FadeIn({ children, delay = 0 }: { children: React.ReactNode; delay?: number }) {
+/* -------------------------------------------------
+   FadeIn Animation Wrapper
+-------------------------------------------------- */
+export function FadeIn({
+  children,
+  delay = 0,
+}: {
+  children: ReactNode;
+  delay?: number;
+}) {
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
-      animate={{ opacity: 1, y: 0 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
       transition={{ duration: 0.5, delay }}
     >
       {children}
