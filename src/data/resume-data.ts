@@ -1,102 +1,96 @@
-// src/data/resume-data.ts
-
 export const RESUME_DATA = {
   name: "Tushar Kumar Gautam",
-  initials: "TG",
-  location: "Uttarakhand, India",
-  locationLink: "https://www.google.com/maps/place/Roorkee",
+
   about:
-    "Data Scientist & ML Engineer focused on GenAI, NLP, and building scalable data-driven systems.",
-  summary:
-    "Bachelor of Technology in Electrical Engineering from IIT Roorkee. Experienced in analyzing large-scale user behavior data and building end-to-end ML pipelines. Passionate about applying Generative AI and MLOps to solve real-world problems.",
-  avatarUrl: "https://avatars.githubusercontent.com/u/123456?v=4", // You can replace this later
-  personalWebsiteUrl: "https://tushar.dev",
+    "Data Scientist & ML Engineer specializing in GenAI, NLP, and MLOps. Built scalable ML systems impacting 2M+ users and production-grade NLP pipelines.",
+
   contact: {
     email: "tushargautamiitr@gmail.com",
-    tel: "+91 9927639137",
+    resume: "/resume.pdf",
     social: [
       {
         name: "GitHub",
-        url: "https://github.com/tushar973",
-        icon: "github",
+        url: "https://github.com/Tushar973",
       },
       {
         name: "LinkedIn",
         url: "https://www.linkedin.com/in/tushar-kumar-gautam-696873277/",
-        icon: "linkedin",
       },
     ],
   },
-  education: [
-    {
-      school: "Indian Institute of Technology, Roorkee",
-      degree: "Bachelor of Technology in Electrical Engineering",
-      start: "2022",
-      end: "2026",
-    },
+
+  highlights: [
+    { value: "2M+", label: "Users Analyzed" },
+    { value: "50K+", label: "Reviews Processed" },
+    { value: "3+", label: "Production Projects" },
+    { value: "GenAI", label: "NLP · RAG · MLOps" },
   ],
+
+  skillGroups: {
+    Programming: ["Python", "SQL", "C++"],
+    "ML & Deep Learning": [
+      "Machine Learning",
+      "Deep Learning",
+      "PyTorch",
+      "TensorFlow",
+      "Scikit-learn",
+    ],
+    "GenAI & NLP": ["Transformers", "RAG", "LangChain", "spaCy"],
+    "MLOps & Backend": [
+      "Docker",
+      "GitHub Actions",
+      "FastAPI",
+      "Flask",
+      "Streamlit",
+    ],
+  },
+
   work: [
     {
-      company: "PocketFM",
-      link: "https://pocketfm.com",
-      badges: ["Remote", "Data Science", "Churn Modeling"],
       title: "Data Scientist Intern",
+      company: "PocketFM",
       start: "May 2025",
       end: "July 2025",
-      description:
-        "Analyzed large-scale user behavior data to identify early churn indicators. Segmented 2M+ users into behavior-based cohorts. Evaluated A/B experiments and built an NLP pipeline for 50K+ user reviews.",
+      badges: ["Remote", "Data Science", "Churn Modeling"],
+      bullets: [
+        "Analyzed large-scale user behavior data to identify early churn indicators",
+        "Segmented 2M+ users into behavior-based cohorts for personalization",
+        "Evaluated A/B experiments using session, impression, and click metrics",
+        "Built NLP pipelines processing 50K+ user reviews for sentiment insights",
+      ],
     },
   ],
-  skills: [
-    "Python",
-    "SQL",
-    "C++",
-    "Machine Learning",
-    "Deep Learning",
-    "PyTorch",
-    "TensorFlow",
-    "Scikit-learn",
-    "NLP",
-    "Transformers",
-    "RAG",
-    "LangChain",
-    "MLOps",
-    "Docker",
-    "GitHub Actions",
-    "FastAPI",
-    "Flask",
-    "Streamlit",
-  ],
+
   projects: [
     {
-      title: "Full-Stack NLP Intelligence Platform",
-      techStack: ["Python", "Flask", "spaCy", "GroqAPI"],
-      description:
-        "Engineered a secure web app with session-based authentication. Developed a real-time NLP inference pipeline integrating spaCy and TextBlob for instant text analysis.",
-      link: {
-        label: "GitHub",
-        href: "https://github.com/Tushar973/NLP-WEBAPP",
-      },
-    },
-    {
       title: "AI Resume Analyzer & Job Matcher",
-      techStack: ["Python", "ML", "Flask", "Streamlit"],
+      impact: "Automated resume–job matching at scale",
       description:
         "Built an NLP system comparing 800+ resumes against 200+ job descriptions using TF-IDF and Cosine Similarity. Used spaCy NER for skill extraction.",
+      techStack: ["Python", "ML", "Flask", "Streamlit"],
       link: {
-        label: "GitHub",
         href: "https://github.com/Tushar973/AI-RESUME-ANALYZER",
       },
     },
     {
-      title: "Credit Card Default Prediction",
-      techStack: ["Python", "XGBoost", "SMOTE", "Risk Modeling"],
+      title: "NLP WebApp (Full-Stack NLP Intelligence Platform)",
+      impact: "Real-time NLP system for instant text intelligence",
       description:
-        "Developed an end-to-end credit default prediction model. Handled class imbalance using SMOTE and optimized the model using the F2-score (Random Forest).",
+        "Engineered a secure web app with session-based authentication and real-time NLP inference using spaCy and TextBlob.",
+      techStack: ["Python", "Flask", "spaCy", "GroqAPI"],
       link: {
-        label: "GitHub",
+        href: "https://github.com/Tushar973/NLP-WEBAPP",
+      },
+    },
+    {
+      title: "Credit Card Default Prediction",
+      impact: "High-recall risk modeling system",
+      description:
+        "Developed an end-to-end ML pipeline handling class imbalance using SMOTE and optimized with F2-score (Random Forest).",
+      techStack: ["Python", "XGBoost", "SMOTE", "Risk Modeling"],
+      link: {
         href: "https://github.com/Tushar973/Credit-Card-Default-Prediction",
       },
     },
   ],
-} as const;
+};
