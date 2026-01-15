@@ -63,23 +63,23 @@ export const RESUME_DATA = {
 
   projects: [
     {
-      title: "AI Resume Analyzer & Job Matcher",
-      impact: "Automated resume–job matching at scale",
+      title: "End-to-End Quality Prediction MLOps",
+      impact: "Automated Quality Prediction at scale",
       description:
-        "Built an NLP system comparing 800+ resumes against 200+ job descriptions using TF-IDF and Cosine Similarity. Used spaCy NER for skill extraction.",
-      techStack: ["Python", "ML", "Flask", "Streamlit"],
+        "Built a production-ready ML pipeline with automated data ingestion, validation, experiment tracking, and model versioning using Scikit-learn, MLflow, and DagsHub.",
+      techStack: ["Python", "ML", "Flask", "MLFlow","Dagshub","DVC"],
       link: {
-        href: "https://github.com/Tushar973/AI-RESUME-ANALYZER",
+        href: "https://github.com/Tushar973/End-to-End-Quality-Prediction-MLOps",
       },
     },
     {
-      title: "NLP WebApp (Full-Stack NLP Intelligence Platform)",
-      impact: "Real-time NLP system for instant text intelligence",
+      title: "Streamlit-based RAG Configurator & Analyzer",
+      impact: "Optimized RAG performance by automating strategy selection and LLM-based accuracy evaluation",
       description:
-        "Engineered a secure web app with session-based authentication and real-time NLP inference using spaCy and TextBlob.",
-      techStack: ["Python", "Flask", "spaCy", "GroqAPI"],
+        "A Python-based RAG experimentation pipeline featuring semantic reranking, dynamic chunking, and automated accuracy scoring via Llama-3.",
+      techStack: ["Python", "LangChain", "FAISS", "GroqAPI","Streamlit"],
       link: {
-        href: "https://github.com/Tushar973/NLP-WEBAPP",
+        href: "https://github.com/Tushar973/rag-optimizer",
       },
     },
     {
